@@ -1,0 +1,4 @@
+let arr = [1, 2, 3, 4, 5];
+    for (ind, &item) in arr.iter().enumerate(){
+        println!("Item is {} at index {}", item, ind);
+    }

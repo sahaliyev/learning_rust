@@ -2,23 +2,19 @@
 struct Person {
     name: String,
     age: u8,
-    gender: String,
-    degree: String
+    gender: String
 }
 
 fn main() {
     let sahil = Person{
         name: String::from("Sahil"),
         age: 27,
-        gender: String::from("male"),
-        degree: String::from("")
+        gender: String::from("male")
     };
     
     let age = &sahil.age;
     let name = &sahil.name;
     let gender = &sahil.gender;
-    println!("{:?}", sahil);
-    
     println!("Person name is {} age is {} gender is {}", name, age, gender);
 
     // update age
